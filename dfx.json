@@ -4,6 +4,10 @@
       "main": "src/opend_backend/main.mo",
       "type": "motoko"
     },
+    "nft": {
+      "main": "src/NFT/nft.mo",
+      "type": "motoko"
+    },
     "opend_frontend": {
       "dependencies": [
         "opend_backend"
@@ -22,6 +26,13 @@
     "build": {
       "args": "",
       "packtool": ""
+    }
+  },
+  "dfx": "0.12.1",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
     }
   },
   "version": 1
